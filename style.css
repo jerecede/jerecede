@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    /* border: solid red; */
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    font-family: "Lato", serif;
+}
+
+a:link, a:visited, a:hover, a:active{
+    color:darkturquoise;
+    text-decoration: none;
+}
+
+body{
+    /* attributi mother */
+    display: flex;
+    justify-content: center;
+}
+
+.box{
+    /* size */
+    height: 800px;
+    width: 30%;
+    /* attributi mother */
+    display: flex;
+    flex-direction: column;
+}
+
+.box .header{
+    /* attributi son */
+    flex-grow: 1;
+    flex-basis: 0;
+    /* attributi mother */
+    display: flex;
+    flex-direction: column;
+}
+
+.box .header .title{
+    /* attributi son */
+    flex-grow: 2;
+    flex-basis: 0;
+}
+
+.box .header .title span{
+    text-align: left;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.box .header .nav{
+    /* attributi son */
+    flex-grow: 1;
+    flex-basis: 0;
+    /* attributi mother */
+    display: flex;
+    flex-direction: row;
+}
+
+.box .header .nav .item{
+    /* attributi son */
+    flex-grow: 1;
+    flex-basis: 0;
+    /* attributi mother */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: large;
+}
+
+.box .line{
+    border: solid white;
+    border-width: 0.1em;
+}
+
+.box .content{
+    /* attributi son */
+    flex-grow: 9;
+    flex-basis: 0;
+    /* attributi mother */
+    display: flex;
+    flex-direction: column;
+}
